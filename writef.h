@@ -1,0 +1,1 @@
+int writef(char [], int);
