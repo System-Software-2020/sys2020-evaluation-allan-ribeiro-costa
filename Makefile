@@ -2,7 +2,7 @@
 TARGET = ex2-rel
 
 $(TARGET): ex2-rel.o libex2-dlib-rel.so
-	gcc -m32 ex2-rel.o -L. -Wl,-rpath='$ORIGIN' -lex2-dlib-rel -o ex2-rel
+	gcc -m32 ex2-rel.o -L. -Wl,-rpath='$$ORIGIN' -lex2-dlib-rel -o ex2-rel
 	
 ex2-rel.o: ex2.c
 	gcc -m32 -fno-pic -c ex2.c -o ex2-rel.o
